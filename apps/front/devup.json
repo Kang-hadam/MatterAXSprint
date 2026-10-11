@@ -1,0 +1,63 @@
+{
+  "theme": {
+    "colors": {
+      "light": {
+        "primary": "#004357",
+        "primaryContainer": "#0D5C75",
+        "onPrimaryContainer": "#93D3EF",
+        "secondary": "#006A60",
+        "secondaryText": "#007166",
+        "secondaryContainer": "#8CF5E4",
+        "tertiaryContainer": "#BDE9FF",
+        "error": "#AD0224",
+        "errorDeep": "#93000A",
+        "errorContainer": "#FFDAD6",
+        "text": "#111C2D",
+        "textSub": "#40484C",
+        "textMuted": "#70787D",
+        "bg": "#F9F9FF",
+        "surface": "#FFFFFF",
+        "surfaceLow": "#F0F3FF",
+        "surfaceContainer": "#E7EEFF",
+        "surfaceHigh": "#DEE8FF",
+        "divider": "#D8E3FB",
+        "onColor": "#FFFFFF"
+      }
+    },
+    "typography": {
+      "display": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "32px", "fontWeight": 700, "lineHeight": "40px", "letterSpacing": "-0.8px" },
+      "title": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "26px", "fontWeight": 800, "lineHeight": "34px", "letterSpacing": "-0.65px" },
+      "heading": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "22px", "fontWeight": 700, "lineHeight": "30px", "letterSpacing": "-0.22px" },
+      "brand": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "18px", "fontWeight": 700, "lineHeight": "26px", "letterSpacing": "-0.45px" },
+      "subtitle": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "18px", "fontWeight": 700, "lineHeight": "26px", "letterSpacing": "0px" },
+      "subtitleLoose": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "18px", "fontWeight": 700, "lineHeight": "28px", "letterSpacing": "0px" },
+      "lead": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "18px", "fontWeight": 500, "lineHeight": "28px", "letterSpacing": "0px" },
+      "body": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 400, "lineHeight": "24px", "letterSpacing": "0px" },
+      "bodyRelaxed": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 400, "lineHeight": "26px", "letterSpacing": "0px" },
+      "bodyMedium": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 500, "lineHeight": "24px", "letterSpacing": "0px" },
+      "bodySemibold": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 600, "lineHeight": "24px", "letterSpacing": "0px" },
+      "bodyBold": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 700, "lineHeight": "24px", "letterSpacing": "0px" },
+      "label": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 700, "lineHeight": "22px", "letterSpacing": "0.16px" },
+      "labelSemibold": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "16px", "fontWeight": 600, "lineHeight": "22px", "letterSpacing": "0.16px" },
+      "small": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "14px", "fontWeight": 500, "lineHeight": "20px", "letterSpacing": "0.14px" },
+      "smallSemibold": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "14px", "fontWeight": 600, "lineHeight": "20px", "letterSpacing": "0.14px" },
+      "smallBold": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "14px", "fontWeight": 700, "lineHeight": "20px", "letterSpacing": "0.14px" },
+      "caption": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "12px", "fontWeight": 600, "lineHeight": "16px", "letterSpacing": "0.24px" },
+      "captionMedium": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "12px", "fontWeight": 500, "lineHeight": "16px", "letterSpacing": "0.24px" },
+      "overline": { "fontFamily": "WenQuanYi Zen Hei, sans-serif", "fontSize": "12px", "fontWeight": 700, "lineHeight": "16px", "letterSpacing": "0.6px" },
+      "latinSubtitle": { "fontFamily": "Inter, sans-serif", "fontSize": "18px", "fontWeight": 700, "lineHeight": "26px", "letterSpacing": "0px" },
+      "latinBodyBold": { "fontFamily": "Inter, sans-serif", "fontSize": "16px", "fontWeight": 700, "lineHeight": "24px", "letterSpacing": "0px" },
+      "latinSmall": { "fontFamily": "Inter, sans-serif", "fontSize": "14px", "fontWeight": 500, "lineHeight": "20px", "letterSpacing": "0.14px" },
+      "latinCaption": { "fontFamily": "Inter, sans-serif", "fontSize": "12px", "fontWeight": 600, "lineHeight": "16px", "letterSpacing": "0.24px" },
+      "latinCaptionBold": { "fontFamily": "Inter, sans-serif", "fontSize": "12px", "fontWeight": 700, "lineHeight": "16px", "letterSpacing": "0.24px" }
+    },
+    "shadow": {
+      "light": {
+        "sm": "0 1px 2px 0 #0000000D",
+        "card": "0 2px 4px -2px #0000001A, 0 4px 6px -1px #0000001A",
+        "danger": "0 4px 6px -4px #AD022433, 0 10px 15px -3px #AD022433",
+        "header": "0 1px 8px 0 #0000000A"
+      }
+    }
+  }
+}

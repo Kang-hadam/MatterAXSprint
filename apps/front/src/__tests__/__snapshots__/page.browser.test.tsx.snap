@@ -1,6 +1,6 @@
 // Bun Snapshot v1, https://bun.sh/docs/test/snapshots
 
-exports[`HomePage should render 1`] = `
+exports[`ThemeScript should render 1`] = `
 "<div>
   <script>
     (function (){document.documentElement.setAttribute('data-theme',localStorage.getItem('__DF_THEME_SELECTED__')||(true&&window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':"default"));})()
@@ -8,8 +8,723 @@ exports[`HomePage should render 1`] = `
 </div>"
 `;
 
-exports[`HomePage should render 2`] = `
-"<div class="background-0-red--255 color-0-white--255">
-  HomePage
+exports[`HomePage should render both role cards linking to their homes 1`] = `
+"<div>
+  <main class="display-0-flex--0 flex-direction-0-column--0 padding-bottom-0-32px--255 padding-right-0-16px--255 padding-left-0-16px--255">
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-0ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <div class="display-0-flex--0 flex-direction-0-column--0 align-items-0-center--255 padding-bottom-0-16px--255 padding-top-0-24px--255 text-align-0-center--255">
+        <div class="display-0-flex--0 flex-direction-0-column--0 padding-bottom-0-8px--255">
+          <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 position-0-relative--255 z-index-0-0--255">
+            <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--secondaryContainer_rp__s_40_pc__cm_transparent_rp_--255 border-radius-0-9999px--255 height-0-120px--255 width-0-120px--255 filter-0-blur_lp_24px_rp_--255 left-0--12px--255 opacity-0-_d_7--255 position-0-absolute--255 top-0--12px--255 z-index-0--1--255" style="--animation-0-: k-13769373888666891942 4s ease-in-out infinite;">
+            </div>
+            <img alt="안심루프 로고" class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 height-0-96px--255 width-0-96px--255 object-fit-0-cover--255" style="--animation-0-: k-18236237283212403444 4s ease-in-out infinite;" src="/images/login-0-33.png">
+          </div>
+        </div>
+        <div class="display-0-flex--0 flex-direction-0-column--0 padding-bottom-0-8px--255">
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_secondaryContainer--255 border-radius-0-9999px--255 gap-0-6px--255 padding-right-0-12px--255 padding-left-0-12px--255 padding-bottom-0-4px--255 padding-top-0-4px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 8px; --width-0-: 8px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <span class="color-0-_dl_secondaryText--255 typo-caption word-break-0-keep-all--255">
+              안심 24시간 실시간 모니터링
+            </span>
+          </div>
+        </div>
+        <h1 class="color-0-_dl_primary--255 typo-display word-break-0-keep-all--255">
+          안심루프
+        </h1>
+        <div class="display-0-flex--0 flex-direction-0-column--0 align-items-0-center--255 max-width-0-320px--255 padding-top-0-4px--255">
+          <span class="color-0-_dl_textSub--255 typo-body word-break-0-keep-all--255">
+            IoT 스마트 안심 돌봄 케어 솔루션
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-70ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255 padding-bottom-0-8px--255 padding-top-0-8px--255">
+        <h2 class="color-0-_dl_text--255 typo-label word-break-0-keep-all--255">
+          접속 역할을 선택해 주세요
+        </h2>
+        <span class="color-0-_dl_textMuted--255 typo-caption word-break-0-keep-all--255">
+          데모 모드
+        </span>
+      </div>
+    </div>
+    <div class="display-0-flex--0 flex-direction-0-column--0 gap-0-16px--255">
+      <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-140ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+        <a data-group="true" class="display-0-flex--0 flex-direction-0-column--0 transform-0-scale_lp__d_98_rp_-_a__c_active-255 box-shadow-0-_dl_sm-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 transform-0-translateY_lp_-2px_rp_-_a__c_hover-255 box-shadow-0-0_s_4px_s_8px_s_-2px_s__h_0000001A_cm_0_s_12px_s_20px_s_-4px_s__h_0000001F-_a__c_hover-255 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_card--255 color-0-inherit--255 cursor-0-pointer--255 gap-0-12px--255 overflow-0-hidden--255 padding-0-20px--255 position-0-relative--255 text-decoration-0-none--255 transition-0-transform_s__d_25s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp__cm_box-shadow_s__d_25s_s_ease--255 z-index-0-0--255" href="/senior">
+          <div class="transform-0-scale_lp_1_d_35_rp_-_c_is_lp__lb_role_eq_group_rb__cm__lb_data-group_rb__rp__c_hover_s__a_-255 border-radius-0-0_s_0_s_0_s_9999px--255 height-0-96px--255 width-0-96px--255 position-0-absolute--255 right-0-0--255 top-0-0--255 transform-origin-0-top_s_right--255 transition-0-transform_s__d_4s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp_--255 z-index-0--1--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--secondaryContainer_rp__s_20_pc__cm_transparent_rp_--255">
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-12px--255">
+            <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 border-radius-0-12px--255 padding-0-10px--255 background-0-_dl_secondaryContainer--255">
+              <div class="mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 background-0-_dl_secondaryText--255 height-0-25_d_08px--255 mask-image-0-url_lp__sl_icons_sl_login-0-40_d_svg_rp_--255 width-0-16_d_33px--255">
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 gap-0-2px--255">
+              <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+                <span class="color-0-_dl_text--255 typo-subtitle word-break-0-keep-all--255">
+                  대상자(어르신) 모드
+                </span>
+                <div class="border-radius-0-4px--255 padding-right-0-8px--255 padding-left-0-8px--255 padding-bottom-0-2px--255 padding-top-0-2px--255 background-0-_dl_secondary--255">
+                  <span class="typo-caption word-break-0-keep-all--255 color-0-_dl_onColor--255">
+                    단말 전용
+                  </span>
+                </div>
+              </div>
+              <span class="typo-bodySemibold word-break-0-keep-all--255 color-0-_dl_primary--255">
+                박순자 어르신 (81세) 댁내 단말
+              </span>
+            </div>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--surfaceLow_rp__s_70_pc__cm_transparent_rp_--255 border-radius-0-8px--255 gap-0-6px--255 padding-0-12px--255">
+            <div class="flex-shrink-0-0--255 height-0-16_d_67px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-13_d_33px--255 background-0-_dl_secondary--255 mask-image-0-url_lp__sl_icons_sl_login-0-52_d_svg_rp_--255">
+            </div>
+            <span class="color-0-_dl_textSub--255 typo-body word-break-0-keep-all--255">
+              위기 발생 시 오작동 즉시 중단 및 안심 상태 확인
+            </span>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255 padding-top-0-4px--255">
+            <span class="color-0-_dl_textMuted--255 typo-caption word-break-0-keep-all--255">
+              터치하여 어르신 화면으로 시작
+            </span>
+            <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+              <span class="typo-smallBold word-break-0-keep-all--255 color-0-_dl_secondary--255">
+                바로 접속
+              </span>
+              <div class="transform-0-translateX_lp_4px_rp_-_c_is_lp__lb_role_eq_group_rb__cm__lb_data-group_rb__rp__c_hover_s__a_-255 height-0-12px--255 width-0-12px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 transition-0-transform_s__d_25s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp_--255 background-0-_dl_secondary--255 mask-image-0-url_lp__sl_icons_sl_login-0-62_d_svg_rp_--255">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-210ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+        <a data-group="true" class="display-0-flex--0 flex-direction-0-column--0 transform-0-scale_lp__d_98_rp_-_a__c_active-255 box-shadow-0-_dl_sm-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 transform-0-translateY_lp_-2px_rp_-_a__c_hover-255 box-shadow-0-0_s_4px_s_8px_s_-2px_s__h_0000001A_cm_0_s_12px_s_20px_s_-4px_s__h_0000001F-_a__c_hover-255 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_card--255 color-0-inherit--255 cursor-0-pointer--255 gap-0-12px--255 overflow-0-hidden--255 padding-0-20px--255 position-0-relative--255 text-decoration-0-none--255 transition-0-transform_s__d_25s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp__cm_box-shadow_s__d_25s_s_ease--255 z-index-0-0--255" href="/guardian">
+          <div class="transform-0-scale_lp_1_d_35_rp_-_c_is_lp__lb_role_eq_group_rb__cm__lb_data-group_rb__rp__c_hover_s__a_-255 border-radius-0-0_s_0_s_0_s_9999px--255 height-0-96px--255 width-0-96px--255 position-0-absolute--255 right-0-0--255 top-0-0--255 transform-origin-0-top_s_right--255 transition-0-transform_s__d_4s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp_--255 z-index-0--1--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--tertiaryContainer_rp__s_25_pc__cm_transparent_rp_--255">
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-12px--255">
+            <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 border-radius-0-12px--255 padding-0-10px--255 background-0-_dl_surfaceHigh--255">
+              <div class="mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 background-0-_dl_primary--255 height-0-23_d_33px--255 mask-image-0-url_lp__sl_icons_sl_login-0-69_d_svg_rp_--255 width-0-23_d_92px--255">
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 gap-0-2px--255">
+              <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+                <span class="color-0-_dl_text--255 typo-subtitle word-break-0-keep-all--255">
+                  보호자(가족) 모드
+                </span>
+                <div class="border-radius-0-4px--255 padding-right-0-8px--255 padding-left-0-8px--255 padding-bottom-0-2px--255 padding-top-0-2px--255 background-0-_dl_primaryContainer--255">
+                  <span class="typo-caption word-break-0-keep-all--255 color-0-_dl_onPrimaryContainer--255">
+                    원격 관리
+                  </span>
+                </div>
+              </div>
+              <span class="typo-bodySemibold word-break-0-keep-all--255 color-0-_dl_primaryContainer--255">
+                보호자 김민서 님 (따님)
+              </span>
+            </div>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--surfaceLow_rp__s_70_pc__cm_transparent_rp_--255 border-radius-0-8px--255 gap-0-6px--255 padding-0-12px--255">
+            <div class="flex-shrink-0-0--255 height-0-16_d_67px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-13_d_33px--255 background-0-_dl_primary--255 mask-image-0-url_lp__sl_icons_sl_login-0-81_d_svg_rp_--255">
+            </div>
+            <span class="color-0-_dl_textSub--255 typo-body word-break-0-keep-all--255">
+              위기 종료 후 사유 확인 및 일상 안심 모니터링
+            </span>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255 padding-top-0-4px--255">
+            <span class="color-0-_dl_textMuted--255 typo-caption word-break-0-keep-all--255">
+              터치하여 보호자 대시보드로 시작
+            </span>
+            <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+              <span class="typo-smallBold word-break-0-keep-all--255 color-0-_dl_primary--255">
+                바로 접속
+              </span>
+              <div class="transform-0-translateX_lp_4px_rp_-_c_is_lp__lb_role_eq_group_rb__cm__lb_data-group_rb__rp__c_hover_s__a_-255 height-0-12px--255 width-0-12px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 transition-0-transform_s__d_25s_s_cubic-bezier_lp__d_22_cm_1_cm__d_36_cm_1_rp_--255 background-0-_dl_primary--255 mask-image-0-url_lp__sl_icons_sl_login-0-91_d_svg_rp_--255">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-24px--255">
+      <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-280ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+        <div class="display-0-flex--0 background-0-_dl_surfaceContainer--255 border-radius-0-12px--255 gap-0-12px--255 padding-0-16px--255">
+          <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+            <div class="background-0-_dl_primary--255 height-0-18_d_33px--255 width-0-18_d_33px--255 mask-image-0-url_lp__sl_icons_sl_login-0-14_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+            </div>
+          </div>
+          <div class="display-0-flex--0 flex-direction-0-column--0">
+            <span class="color-0-_dl_text--255 typo-smallBold word-break-0-keep-all--255">
+              안내 사항
+            </span>
+            <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+              <span class="color-0-_dl_textSub--255 typo-bodyRelaxed word-break-0-keep-all--255">
+                테스트용 간이 계정입니다. 역할을 선택하면 해당 화면으로 즉시 전환됩니다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>"
+`;
+
+exports[`SeniorHomePage should render the recipient home 1`] = `
+"<div>
+  <header class="backdrop-filter-0-blur_lp_24px_rp_--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--bg_rp__s_90_pc__cm_transparent_rp_--255 box-shadow-0-_dl_header--255 position-0-sticky--255 top-0-0--255 z-index-0-10--255">
+    <div class="display-0-flex--0 align-items-0-center--255 height-0-64px--255 justify-content-0-space-between--255 padding-right-0-16px--255 padding-left-0-16px--255">
+      <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+        <img alt="안심루프 로고" class="aspect-ratio-0-1--255 height-0-32px--255 width-0-32px--255 object-fit-0-cover--255" src="/images/brand-logo.png">
+        <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+          <span class="color-0-_dl_primary--255 typo-brand word-break-0-keep-all--255">
+            안심루프
+          </span>
+          <span class="color-0-_dl_textSub--255 typo-latinSmall">
+            · Recipient Home
+          </span>
+        </div>
+      </div>
+      <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+        <div class="border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255 background-0-transparent--255">
+        </div>
+        <a aria-label="역할 선택으로 돌아가기" href="/">
+          <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 transform-0-scale_lp__d_92_rp_-_a__c_active-255 background-0-_dl_primaryContainer-_a__c_hover-255 transform-0-rotate_lp_-8deg_rp_-_a__c_hover-255 background-0-_dl_primary--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255 cursor-0-pointer--255 transition-0-all_s__d_2s_s_ease--255">
+            <div class="background-0-_dl_onColor--255 height-0-12px--255 width-0-12px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 mask-image-0-url_lp__sl_icons_sl_senior-0-208_d_svg_rp_--255">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="display-0-flex--0 flex-direction-0-column--0 gap-0-24px--255 padding-bottom-0-72px--255 padding-right-0-16px--255 padding-left-0-16px--255">
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-0ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 gap-0-16px--255 padding-0-24px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255">
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_secondaryContainer--255 border-radius-0-9999px--255 gap-0-4px--255 padding-right-0-16px--255 padding-left-0-16px--255 padding-bottom-0-4px--255 padding-top-0-4px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 14px; --width-0-: 14px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <span class="color-0-_dl_secondaryText--255 typo-label word-break-0-keep-all--255">
+              정상 · 평온한 상태
+            </span>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+            <div class="background-0-_dl_secondary--255 height-0-14_d_38px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-103_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-16_d_67px--255">
+            </div>
+            <span class="color-0-_dl_textSub--255 typo-smallSemibold word-break-0-keep-all--255">
+              실시간 연결
+            </span>
+          </div>
+        </div>
+        <div class="display-0-flex--0 flex-direction-0-column--0 gap-0-4px--255">
+          <h1 class="color-0-_dl_text--255 typo-title word-break-0-keep-all--255">
+            박순자 어르신,
+            <br>
+            현재 댁내가 평온합니다
+          </h1>
+          <span class="color-0-_dl_textSub--255 typo-lead word-break-0-keep-all--255">
+            오늘도 안심루프가 댁내를 든든하게 보살피고 있어요.
+          </span>
+        </div>
+        <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surfaceLow--255 border-radius-0-8px--255 gap-0-8px--255 justify-content-0-space-between--255 padding-0-16px--255">
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+            <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--secondaryContainer_rp__s_60_pc__cm_transparent_rp_--255 border-radius-0-9999px--255 height-0-48px--255 width-0-48px--255 flex-shrink-0-0--255">
+              <div class="background-0-_dl_secondary--255 height-0-23_d_33px--255 width-0-23_d_33px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-115_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0">
+              <span class="color-0-_dl_textSub--255 typo-smallSemibold word-break-0-keep-all--255">
+                센서 감지 현황
+              </span>
+              <span class="color-0-_dl_text--255 typo-subtitleLoose word-break-0-keep-all--255">
+                거실 레이더 센서 정상 감지 중
+              </span>
+            </div>
+          </div>
+          <div class="background-0-color-mix_lp_in_s_srgb_cm_var_lp_--secondaryContainer_rp__s_50_pc__cm_transparent_rp_--255 border-radius-0-4px--255 flex-shrink-0-0--255 padding-right-0-8px--255 padding-left-0-8px--255 padding-bottom-0-2px--255 padding-top-0-2px--255">
+            <span class="color-0-_dl_secondary--255 typo-smallBold white-space-0-nowrap--255">
+              안정 상태
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-70ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_card--255 gap-0-16px--255 padding-0-24px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255 padding-bottom-0-4px--255">
+          <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_errorContainer--255 border-radius-0-9999px--255 height-0-40px--255 width-0-40px--255 flex-shrink-0-0--255">
+            <div class="background-0-_dl_errorDeep--255 height-0-22px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-128_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-17px--255">
+            </div>
+          </div>
+          <div class="display-0-flex--0 flex-direction-0-column--0">
+            <span class="color-0-_dl_error--255 text-transform-0-uppercase--255 typo-overline word-break-0-keep-all--255">
+              비상 알림 제어
+            </span>
+            <h2 class="color-0-_dl_text--255 typo-heading word-break-0-keep-all--255">
+              혹시 위기 알림이 울렸나요?
+            </h2>
+          </div>
+        </div>
+        <button aria-live="polite" type="button" class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 transform-0-scale_lp__d_97_rp_-_a__c_active-255 cursor-0-default-_a__c_disabled-255 outline-0-3px_s_solid_s_var_lp_--errorContainer_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 filter-0-brightness_lp_1_d_08_rp_-_a__c_hover-255 border-0-none--255 border-radius-0-12px--255 cursor-0-pointer--255 gap-0-8px--255 min-height-0-68px--255 padding-right-0-16px--255 padding-left-0-16px--255 padding-bottom-0-8px--255 padding-top-0-8px--255 transition-0-background-color_s__d_3s_s_ease_cm_box-shadow_s__d_3s_s_ease_cm_transform_s__d_15s_s_ease_cm_filter_s__d_2s_s_ease--255 width-0-100_pc_--255 animation-0-none--255 background-0-_dl_error--255 box-shadow-0-_dl_danger--255" style="--animation-0-: k-2069764887770064323 .4s cubic-bezier(.22,1,.36,1);">
+          <div class="background-0-_dl_onColor--255 flex-shrink-0-0--255 height-0-31_d_17px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-137_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-28_d_05px--255">
+          </div>
+          <span class="color-0-_dl_onColor--255 text-align-0-center--255 typo-brand word-break-0-keep-all--255">
+            괜찮아요! 오작동 알림 중단하기
+          </span>
+        </button>
+        <div class="display-0-flex--0 flex-direction-0-column--0 gap-0-4px--255 padding-top-0-4px--255">
+          <span class="color-0-_dl_textSub--255 typo-smallSemibold word-break-0-keep-all--255">
+            간편 사유 선택 :
+          </span>
+          <div aria-label="간편 사유 선택" class="display-0-flex--0 flex-direction-0-column--0 gap-0-4px--255 padding-top-0-4px--255">
+            <button aria-pressed="false" type="button" class="display-0-flex--0 transform-0-scale_lp__d_97_rp_-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 align-items-0-center--255 align-self-0-flex-start--255 border-0-none--255 border-radius-0-9999px--255 cursor-0-pointer--255 gap-0-6px--255 min-height-0-48px--255 padding-bottom-0-14px--255 padding-top-0-13_d_5px--255 padding-right-0-16px--255 padding-left-0-16px--255 transition-0-all_s__d_2s_s_ease--255 background-0-_dl_surfaceHigh-_a__c_hover-255 background-0-_dl_surfaceContainer--255 box-shadow-0-none--255">
+              <span aria-hidden="true" class="typo-small">
+                📦
+              </span>
+              <span class="typo-small word-break-0-keep-all--255 color-0-_dl_text--255">
+                실수로 물건을 떨어뜨렸어요
+              </span>
+            </button>
+            <button aria-pressed="false" type="button" class="display-0-flex--0 transform-0-scale_lp__d_97_rp_-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 align-items-0-center--255 align-self-0-flex-start--255 border-0-none--255 border-radius-0-9999px--255 cursor-0-pointer--255 gap-0-6px--255 min-height-0-48px--255 padding-bottom-0-14px--255 padding-top-0-13_d_5px--255 padding-right-0-16px--255 padding-left-0-16px--255 transition-0-all_s__d_2s_s_ease--255 background-0-_dl_surfaceHigh-_a__c_hover-255 background-0-_dl_surfaceContainer--255 box-shadow-0-none--255">
+              <span aria-hidden="true" class="typo-small">
+                🔔
+              </span>
+              <span class="typo-small word-break-0-keep-all--255 color-0-_dl_text--255">
+                단순 오작동이에요
+              </span>
+            </button>
+            <button aria-pressed="false" type="button" class="display-0-flex--0 transform-0-scale_lp__d_97_rp_-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 align-items-0-center--255 align-self-0-flex-start--255 border-0-none--255 border-radius-0-9999px--255 cursor-0-pointer--255 gap-0-6px--255 min-height-0-48px--255 padding-bottom-0-14px--255 padding-top-0-13_d_5px--255 padding-right-0-16px--255 padding-left-0-16px--255 transition-0-all_s__d_2s_s_ease--255 background-0-_dl_surfaceHigh-_a__c_hover-255 background-0-_dl_surfaceContainer--255 box-shadow-0-none--255">
+              <span aria-hidden="true" class="typo-small">
+                👵
+              </span>
+              <span class="typo-small word-break-0-keep-all--255 color-0-_dl_text--255">
+                저는 다치지 않고 괜찮아요
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-140ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surfaceContainer--255 border-radius-0-12px--255 justify-content-0-space-between--255 padding-0-16px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+          <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surface--255 border-radius-0-9999px--255 box-shadow-0-_dl_sm--255 height-0-48px--255 width-0-48px--255">
+            <div class="background-0-_dl_primary--255 height-0-19_d_5px--255 width-0-19_d_5px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-161_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+            </div>
+          </div>
+          <div class="display-0-flex--0 flex-direction-0-column--0">
+            <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+              보호자 바로 연결
+            </span>
+            <span class="color-0-_dl_text--255 typo-subtitleLoose word-break-0-keep-all--255">
+              딸 김은지 님
+            </span>
+          </div>
+        </div>
+        <button type="button" class="display-0-flex--0 transform-0-scale_lp__d_96_rp_-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 background-0-_dl_primaryContainer-_a__c_hover-255 transform-0-translateY_lp_-1px_rp_-_a__c_hover-255 align-items-0-center--255 background-0-_dl_primary--255 border-0-none--255 border-radius-0-8px--255 box-shadow-0-_dl_sm--255 cursor-0-pointer--255 gap-0-4px--255 min-height-0-48px--255 padding-right-0-16px--255 padding-left-0-16px--255 padding-bottom-0-14px--255 padding-top-0-14px--255 transition-0-all_s__d_2s_s_ease--255">
+          <div class="background-0-_dl_onColor--255 height-0-15px--255 width-0-15px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-169_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+          </div>
+          <span class="color-0-_dl_onColor--255 typo-smallBold word-break-0-keep-all--255">
+            전화하기
+          </span>
+        </button>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-210ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surfaceLow--255 border-radius-0-12px--255 gap-0-8px--255 padding-0-16px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255">
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-6px--255">
+            <div class="background-0-_dl_textSub--255 height-0-13_d_5px--255 width-0-13_d_5px--255 mask-image-0-url_lp__sl_icons_sl_senior-0-176_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+            </div>
+            <span class="color-0-_dl_textSub--255 typo-smallBold word-break-0-keep-all--255">
+              댁내 IoT 기기 상태
+            </span>
+          </div>
+          <span class="color-0-_dl_secondary--255 typo-caption word-break-0-keep-all--255">
+            모두 정상 동작 중
+          </span>
+        </div>
+        <div class="display-0-flex--0 gap-0-4px--255 justify-content-0-center--255">
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surface--255 border-radius-0-8px--255 box-shadow-0-_dl_sm--255 flex-0-1--255 gap-0-4px--255 padding-0-8px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 10px; --width-0-: 10px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 overflow-0-hidden--255">
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                레이더 센서
+              </span>
+              <span class="color-0-_dl_text--255 typo-bodyBold word-break-0-keep-all--255">
+                정상 작동 (거실)
+              </span>
+            </div>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surface--255 border-radius-0-8px--255 box-shadow-0-_dl_sm--255 flex-0-1--255 gap-0-4px--255 padding-0-8px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 10px; --width-0-: 10px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 overflow-0-hidden--255">
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                스마트 허브
+              </span>
+              <span class="color-0-_dl_text--255 typo-latinBodyBold word-break-0-keep-all--255">
+                연결됨 (Wi-Fi 양호)
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>"
+`;
+
+exports[`GuardianHomePage should render the guardian home 1`] = `
+"<div>
+  <header class="backdrop-filter-0-blur_lp_24px_rp_--255 background-0-color-mix_lp_in_s_srgb_cm_var_lp_--bg_rp__s_90_pc__cm_transparent_rp_--255 box-shadow-0-_dl_header--255 position-0-sticky--255 top-0-0--255 z-index-0-10--255">
+    <div class="display-0-flex--0 align-items-0-center--255 height-0-64px--255 justify-content-0-space-between--255 padding-right-0-16px--255 padding-left-0-16px--255">
+      <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+        <img alt="안심루프 로고" class="aspect-ratio-0-1--255 height-0-32px--255 width-0-32px--255 object-fit-0-cover--255" src="/images/brand-logo.png">
+        <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+          <span class="color-0-_dl_primary--255 typo-brand word-break-0-keep-all--255">
+            안심루프
+          </span>
+          <span class="color-0-_dl_textSub--255 typo-latinSmall">
+            · Guardian Home
+          </span>
+        </div>
+      </div>
+      <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+        <div class="border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255 background-0-_dl_surfaceContainer--255">
+        </div>
+        <a aria-label="역할 선택으로 돌아가기" href="/">
+          <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 transform-0-scale_lp__d_92_rp_-_a__c_active-255 background-0-_dl_primaryContainer-_a__c_hover-255 transform-0-rotate_lp_-8deg_rp_-_a__c_hover-255 background-0-_dl_primary--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255 cursor-0-pointer--255 transition-0-all_s__d_2s_s_ease--255">
+            <div class="background-0-_dl_onColor--255 height-0-12px--255 width-0-12px--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-409_d_svg_rp_--255">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="display-0-flex--0 flex-direction-0-column--0 gap-0-16px--255 padding-bottom-0-32px--255 padding-right-0-16px--255 padding-left-0-16px--255">
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-0ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 gap-0-8px--255 padding-0-16px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255">
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+            <div class="background-0-_dl_surfaceContainer--255 border-radius-0-9999px--255 height-0-48px--255 width-0-48px--255 flex-shrink-0-0--255 overflow-0-hidden--255">
+              <img alt="박순자 어르신 프로필 사진" class="height-0-100_pc_--255 width-0-100_pc_--255 object-fit-0-cover--255" src="/images/recipient-avatar.png">
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0">
+              <div class="display-0-flex--0 align-items-0-baseline--255 gap-0-4px--255">
+                <h1 class="color-0-_dl_text--255 typo-subtitle word-break-0-keep-all--255">
+                  박순자 어르신
+                </h1>
+                <span class="color-0-_dl_textSub--255 typo-latinSubtitle">
+                  (81세)
+                </span>
+              </div>
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                어머니 댁 · 마포구 연남동
+              </span>
+            </div>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_secondaryContainer--255 border-radius-0-9999px--255 flex-shrink-0-0--255 gap-0-6px--255 padding-right-0-12px--255 padding-left-0-12px--255 padding-bottom-0-4px--255 padding-top-0-4px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 8px; --width-0-: 8px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <span class="color-0-_dl_secondaryText--255 typo-caption word-break-0-keep-all--255">
+              안심 상태
+            </span>
+          </div>
+        </div>
+        <button type="button" class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 transform-0-scale_lp__d_98_rp_-_a__c_active-255 outline-0-2px_s_solid_s_var_lp_--primary_rp_-_a__c_focus-visible-255 outline-offset-0-2px-_a__c_focus-visible-255 background-0-_dl_primaryContainer-_a__c_hover-255 background-0-_dl_primary--255 border-0-none--255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 cursor-0-pointer--255 gap-0-4px--255 height-0-56px--255 transition-0-all_s__d_2s_s_ease--255 width-0-100_pc_--255">
+          <div class="background-0-_dl_onColor--255 height-0-15px--255 width-0-15px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-229_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+          </div>
+          <span class="color-0-_dl_onColor--255 typo-labelSemibold word-break-0-keep-all--255">
+            어머니께 안부 전화 걸기
+          </span>
+        </button>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-70ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 gap-0-4px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255 padding-right-0-4px--255 padding-left-0-4px--255">
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-6px--255">
+            <div class="background-0-_dl_primary--255 height-0-16_d_67px--255 width-0-16_d_67px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-236_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+            </div>
+            <h2 class="color-0-_dl_primary--255 typo-label word-break-0-keep-all--255">
+              최근 위기 대응 종료 기록
+            </h2>
+          </div>
+          <div class="background-0-_dl_surfaceHigh--255 border-radius-0-9999px--255 padding-right-0-8px--255 padding-left-0-8px--255 padding-bottom-0-2px--255 padding-top-0-2px--255">
+            <span class="color-0-_dl_textSub--255 typo-captionMedium word-break-0-keep-all--255">
+              안전 확인 완료
+            </span>
+          </div>
+        </div>
+        <div class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 gap-0-8px--255 padding-0-16px--255">
+          <div class="display-0-flex--0 gap-0-4px--255">
+            <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+              <div class="background-0-_dl_secondary--255 height-0-18_d_33px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-245_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-14_d_67px--255">
+              </div>
+            </div>
+            <span class="color-0-_dl_text--255 typo-smallSemibold word-break-0-keep-all--255">
+              위기 대응이 안전하게 종결되었습니다
+            </span>
+          </div>
+          <div class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surfaceLow--255 border-radius-0-12px--255 gap-0-8px--255 padding-0-16px--255">
+            <div class="display-0-flex--0 gap-0-12px--255">
+              <div class="display-0-flex--0 flex-direction-0-column--0 flex-shrink-0-0--255 padding-top-0-2px--255">
+                <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surfaceContainer--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255">
+                  <div class="background-0-_dl_textSub--255 height-0-10_d_61px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-253_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-15px--255">
+                  </div>
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0">
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  발생 감지
+                </span>
+                <span class="color-0-_dl_text--255 typo-bodyMedium word-break-0-keep-all--255">
+                  오늘 15:24 거실 바닥 충격 감지
+                </span>
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  레이더 파형 분석: 급격한 중력가속도 변화 (낙상 의심)
+                </span>
+              </div>
+            </div>
+            <div class="background-0-_dl_divider--255 height-0-1px--255">
+            </div>
+            <div class="display-0-flex--0 gap-0-12px--255">
+              <div class="display-0-flex--0 flex-direction-0-column--0 flex-shrink-0-0--255 padding-top-0-2px--255">
+                <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_secondaryContainer--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255">
+                  <div class="background-0-_dl_secondaryText--255 height-0-15_d_75px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-266_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-12_d_99px--255">
+                  </div>
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0">
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  종료 방식
+                </span>
+                <div class="display-0-flex--0 align-items-0-center--255 flex-wrap-0-wrap--255 gap-0-8px--255">
+                  <span class="color-0-_dl_text--255 typo-bodySemibold word-break-0-keep-all--255">
+                    어르신 직접 해제 완료
+                  </span>
+                  <div class="background-0-_dl_surfaceContainer--255 border-radius-0-4px--255 padding-right-0-8px--255 padding-left-0-8px--255 padding-bottom-0-2px--255 padding-top-0-2px--255">
+                    <span class="color-0-_dl_primary--255 typo-latinCaptionBold word-break-0-keep-all--255">
+                      42초 내
+                    </span>
+                  </div>
+                </div>
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  벽면 안심 단말기 확인 터치패드 입력
+                </span>
+              </div>
+            </div>
+            <div class="background-0-_dl_divider--255 height-0-1px--255">
+            </div>
+            <div class="display-0-flex--0 gap-0-12px--255">
+              <div class="display-0-flex--0 flex-direction-0-column--0 flex-shrink-0-0--255 padding-top-0-2px--255">
+                <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surfaceContainer--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255">
+                  <div class="background-0-_dl_primary--255 height-0-14_d_21px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-282_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-16_d_5px--255">
+                  </div>
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0">
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  해제 사유 및 AI 음성 판정
+                </span>
+                <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+                  <span class="color-0-_dl_primary--255 typo-bodySemibold word-break-0-keep-all--255">
+                    “실수로 물건을 떨어뜨렸어요 (단순 착오 및 안전)”
+                  </span>
+                </div>
+                <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+                  <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                    AI 허브 실시간 판별: 어르신 “괜찮아, 안 다쳤어” 음성 화자 일치율 98.4%
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="background-0-_dl_divider--255 height-0-1px--255">
+            </div>
+            <div class="display-0-flex--0 gap-0-12px--255">
+              <div class="display-0-flex--0 flex-direction-0-column--0 flex-shrink-0-0--255 padding-top-0-2px--255">
+                <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surfaceContainer--255 border-radius-0-9999px--255 height-0-32px--255 width-0-32px--255">
+                  <div class="background-0-_dl_secondary--255 height-0-13_d_5px--255 width-0-13_d_5px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-297_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+                  </div>
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0">
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  119 긴급 출동 연계
+                </span>
+                <div class="display-0-flex--0 align-items-0-center--255 gap-0-6px--255 padding-top-0-2px--255">
+                  <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 8px; --width-0-: 8px;">
+                    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+                    </div>
+                  </div>
+                  <span class="color-0-_dl_secondary--255 typo-smallBold word-break-0-keep-all--255">
+                    정상 차단 (불필요한 출동 방지 완료)
+                  </span>
+                </div>
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  상황실 골든타임 프로토콜 카운트다운 자동 정지
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-140ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 gap-0-4px--255 padding-top-0-4px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255 padding-right-0-4px--255 padding-left-0-4px--255">
+          <h2 class="color-0-_dl_primary--255 typo-label word-break-0-keep-all--255">
+            오늘의 주요 활동 타임라인
+          </h2>
+          <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+            안심 센서 로그
+          </span>
+        </div>
+        <ol class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surface--255 border-radius-0-12px--255 box-shadow-0-_dl_sm--255 gap-0-16px--255 list-style-0-none--255 margin-0-0--255 padding-0-16px--255">
+          <li class="display-0-flex--0 gap-0-8px--255">
+            <div class="display-0-flex--0 flex-direction-0-column--0 align-items-0-center--255 flex-shrink-0-0--255">
+              <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_secondaryContainer--255 border-radius-0-9999px--255 height-0-28px--255 width-0-28px--255">
+                <div class="background-0-_dl_secondaryText--255 height-0-14_d_33px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-320_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-8_d_67px--255">
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0 height-0-44px--255 padding-top-0-4px--255 width-0-2px--255">
+                <div class="background-0-_dl_surfaceContainer--255 height-0-40px--255 width-0-2px--255">
+                </div>
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+              <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+                <time class="color-0-_dl_primary--255 typo-latinCaptionBold">
+                  15:25
+                </time>
+                <span class="color-0-_dl_secondary--255 typo-captionMedium word-break-0-keep-all--255">
+                  활동 재개
+                </span>
+              </div>
+              <span class="color-0-_dl_text--255 typo-body word-break-0-keep-all--255">
+                낙상 오감지 해제 후 정상 보행 감지됨
+              </span>
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                거실 → 주방으로 안정적인 걸음걸이 이동
+              </span>
+            </div>
+          </li>
+          <li class="display-0-flex--0 gap-0-8px--255">
+            <div class="display-0-flex--0 flex-direction-0-column--0 align-items-0-center--255 flex-shrink-0-0--255">
+              <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surfaceHigh--255 border-radius-0-9999px--255 height-0-28px--255 width-0-28px--255">
+                <div class="background-0-_dl_primary--255 height-0-12px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-337_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-9_d_33px--255">
+                </div>
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0 height-0-44px--255 padding-top-0-4px--255 width-0-2px--255">
+                <div class="background-0-_dl_surfaceContainer--255 height-0-40px--255 width-0-2px--255">
+                </div>
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+              <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+                <time class="color-0-_dl_primary--255 typo-latinCaptionBold">
+                  12:40
+                </time>
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  복약 안심
+                </span>
+              </div>
+              <span class="color-0-_dl_text--255 typo-body word-break-0-keep-all--255">
+                점심 복약 완료 (혈압약 보관함 개폐)
+              </span>
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                스마트 약통 1회분 투약 정상 확인
+              </span>
+            </div>
+          </li>
+          <li class="display-0-flex--0 gap-0-8px--255">
+            <div class="display-0-flex--0 flex-direction-0-column--0 align-items-0-center--255 flex-shrink-0-0--255">
+              <div class="display-0-flex--0 justify-content-0-center--0 align-items-0-center--0 background-0-_dl_surfaceHigh--255 border-radius-0-9999px--255 height-0-28px--255 width-0-28px--255">
+                <div class="background-0-_dl_primary--255 height-0-13_d_33px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-354_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-10_d_67px--255">
+                </div>
+              </div>
+            </div>
+            <div class="display-0-flex--0 flex-direction-0-column--0 padding-top-0-2px--255">
+              <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+                <time class="color-0-_dl_primary--255 typo-latinCaptionBold">
+                  08:15
+                </time>
+                <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                  식사 감지
+                </span>
+              </div>
+              <span class="color-0-_dl_text--255 typo-body word-break-0-keep-all--255">
+                주방 냉장고 문 열림 및 아침 식사 활동
+              </span>
+              <span class="color-0-_dl_textSub--255 typo-caption word-break-0-keep-all--255">
+                기상 후 정상적인 조간 일과 유지 중
+              </span>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </div>
+    <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 animation-delay-0-210ms--255" style="--animation-0-: k-12227419369095640033 .5s cubic-bezier(.22,1,.36,1) both;">
+      <section class="display-0-flex--0 flex-direction-0-column--0 background-0-_dl_surfaceLow--255 border-radius-0-12px--255 gap-0-4px--255 padding-0-16px--255">
+        <div class="display-0-flex--0 align-items-0-center--255 justify-content-0-space-between--255">
+          <span class="color-0-_dl_textSub--255 typo-smallSemibold word-break-0-keep-all--255">
+            댁내 안심루프 센서 상태
+          </span>
+          <div class="display-0-flex--0 align-items-0-center--255 gap-0-4px--255">
+            <div aria-hidden="true" class="background-0-_dl_secondary--255 border-radius-0-9999px--255 height-0---255 width-0---255 flex-shrink-0-0--255 position-0-relative--255" style="--height-0-: 6px; --width-0-: 6px;">
+              <div class="animation-0-none-_at_media_lp_prefers-reduced-motion_c__s_reduce_rp_-255 animation-0---255 background-0-_dl_secondary--255 border-radius-0-9999px--255 inset-0-0--255 position-0-absolute--255" style="--animation-0-: k-2120964922586132249 2s cubic-bezier(0,0,.2,1) infinite;">
+              </div>
+            </div>
+            <span class="color-0-_dl_secondary--255 typo-captionMedium word-break-0-keep-all--255">
+              전체 정상 작동 중
+            </span>
+          </div>
+        </div>
+        <div class="display-0-flex--0 gap-0-4px--255 justify-content-0-center--255 padding-top-0-4px--255">
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surface--255 border-radius-0-8px--255 flex-0-1--255 justify-content-0-space-between--255 padding-0-8px--255">
+            <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+              <div class="background-0-_dl_primary--255 height-0-16_d_67px--255 width-0-16_d_67px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-377_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255">
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0 overflow-0-hidden--255">
+                <span class="color-0-_dl_text--255 typo-caption word-break-0-keep-all--255">
+                  레이더 센서
+                </span>
+                <span class="color-0-_dl_secondary--255 typo-latinCaption word-break-0-keep-all--255">
+                  배터리 94%
+                </span>
+              </div>
+            </div>
+            <div class="background-0-_dl_secondary--255 height-0-13_d_33px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-384_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-6_d_67px--255">
+            </div>
+          </div>
+          <div class="display-0-flex--0 align-items-0-center--255 background-0-_dl_surface--255 border-radius-0-8px--255 flex-0-1--255 justify-content-0-space-between--255 padding-0-8px--255">
+            <div class="display-0-flex--0 align-items-0-center--255 gap-0-8px--255">
+              <div class="background-0-_dl_primary--255 height-0-15_d_83px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-388_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-15_d_54px--255">
+              </div>
+              <div class="display-0-flex--0 flex-direction-0-column--0 overflow-0-hidden--255">
+                <span class="color-0-_dl_text--255 typo-caption word-break-0-keep-all--255">
+                  스마트 AI 허브
+                </span>
+                <span class="color-0-_dl_secondary--255 typo-latinCaption word-break-0-keep-all--255">
+                  연결됨 (LTE)
+                </span>
+              </div>
+            </div>
+            <div class="background-0-_dl_secondary--255 height-0-11_d_33px--255 mask-image-0-url_lp__sl_icons_sl_guardian-0-395_d_svg_rp_--255 mask-position-0-center--255 mask-repeat-0-no-repeat--255 mask-size-0-contain--255 width-0-16px--255">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 </div>"
 `;

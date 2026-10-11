@@ -13,6 +13,9 @@
   "workspaces": [
     "apps/*"
   ],
+  "overrides": {
+    "react": "19.2.8"
+  },
   "scripts": {
     "prelint": "cargo clippy -- -D warnings && cargo fmt --check && cargo check",
     "build": "bun run -F ./apps/front build && bun run -F ./apps/admin build",

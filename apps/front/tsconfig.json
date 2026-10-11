@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ESNext",
     "types": [
-      "bun"
+      "bun",
+      "vinext/types"
     ],
     "lib": [
       "dom",
