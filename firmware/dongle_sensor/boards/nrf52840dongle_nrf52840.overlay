@@ -1,0 +1,4 @@
+/* Free the UART pins (P0.17, P0.20, P0.22, P0.24) so that the scan can check them. */
+&uart0 {
+	status = "disabled";
+};

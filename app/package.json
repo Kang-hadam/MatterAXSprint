@@ -26,7 +26,7 @@
     "posttest": "cargo tarpaulin --out xml --out stdout --out html --all-targets",
     "dev": "bun run --workspaces dev",
     "api": "cargo run",
-    "prepare": "husky",
+    "prepare": "cd .. && husky app/.husky",
     "changepacks": "bunx @changepacks/cli"
   },
   "author": "devfive"

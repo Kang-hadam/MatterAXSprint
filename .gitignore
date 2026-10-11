@@ -1,38 +1,16 @@
-node_modules
-.idea
-.vscode
-.env.local
-.env*local
-schema.d.ts
-!apps/*/schema.d.ts
+# Local editor / agent settings
+.idea/
+.vscode/
+.junie/
+.opencode/
+.agents/
+.claude/
+.figma-export/
+opencode.json
+skills-lock.json
 
-apis/*
-!apis/*/
-apps/*
-!apps/*/
-
-# Terraform/OpenTofu
-.terraform/
-.terraform.lock.hcl
-*.tfstate
-*.tfstate.*
-*.tfvars
-*.tfvars.json
-crash.log
-crash.*.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-/target
-/coverage
-tarpaulin-report.html
-cobertura.xml
-
-.claude
-test.db
-.sisyphus
-tsconfig.tsbuildinfo
-/**/.vinext/
-/**/dist/
-.omo
+# Zephyr / nRF Connect SDK build output
+firmware/**/build/
+firmware/**/build_*/
+firmware/thread_cli/dk/
+firmware/thread_cli/dongle/

@@ -1,0 +1,6 @@
+# Do not use partition manager on nRF52840 dongle.
+# The program must start after the dongle's USB bootloader.
+config PARTITION_MANAGER
+	default n if BOARD_NRF52840DONGLE_NRF52840
+
+source "share/sysbuild/Kconfig"
