@@ -1,0 +1,568 @@
+{
+  "model": {
+    "hidden": 12,
+    "params": 264,
+    "context": [
+      "ready",
+      "day1",
+      "lslope",
+      "slope_dir",
+      "lspread",
+      "days",
+      "noise",
+      "swing"
+    ],
+    "features": [
+      "level",
+      "slow",
+      "trend",
+      "lstd",
+      "ldmax",
+      "ldabs"
+    ],
+    "window_s": 60,
+    "recognition_windows": 5,
+    "slots": 96,
+    "threshold": [
+      5.0537824630737305,
+      7.493583679199219
+    ],
+    "threshold_rule": "max window accuracy on labelled dev streams (iterated)",
+    "export_rel_err": 1.0157468750549015e-05,
+    "seed": 9001
+  },
+  "candidates": [
+    {
+      "hidden": 8,
+      "params": 180,
+      "val_nll": 0.1909,
+      "chosen": false
+    },
+    {
+      "hidden": 12,
+      "params": 264,
+      "val_nll": 0.1844,
+      "chosen": true
+    },
+    {
+      "hidden": 16,
+      "params": 348,
+      "val_nll": 0.1827,
+      "chosen": false
+    },
+    {
+      "hidden": 24,
+      "params": 516,
+      "val_nll": 0.1788,
+      "chosen": false
+    },
+    {
+      "hidden": 32,
+      "params": 684,
+      "val_nll": 0.1798,
+      "chosen": false
+    }
+  ],
+  "test": {
+    "windows": 1007500,
+    "accuracy": 0.9548,
+    "recall": 0.716,
+    "precision": 0.7018,
+    "false_positive_rate": 0.0253,
+    "tp": 55437,
+    "fp": 23557,
+    "tn": 906518,
+    "fn": 21988,
+    "balanced_accuracy": 0.8453,
+    "f1": 0.7088,
+    "roc_auc": 0.9511,
+    "per_phase": {
+      "BASIC": {
+        "windows": 154737,
+        "accuracy": 0.9095,
+        "recall": 0.3122,
+        "precision": 0.4171,
+        "false_positive_rate": 0.0382,
+        "tp": 3889,
+        "fp": 5434,
+        "tn": 136848,
+        "fn": 8566
+      },
+      "FULL": {
+        "windows": 852763,
+        "accuracy": 0.963,
+        "recall": 0.7934,
+        "precision": 0.7399,
+        "false_positive_rate": 0.023,
+        "tp": 51548,
+        "fp": 18123,
+        "tn": 769670,
+        "fn": 13422
+      }
+    },
+    "per_space": {
+      "room": {
+        "windows": 201500,
+        "accuracy": 0.9607,
+        "recall": 0.7186,
+        "precision": 0.7624,
+        "false_positive_rate": 0.0189,
+        "tp": 11263,
+        "fp": 3510,
+        "tn": 182317,
+        "fn": 4410
+      },
+      "office": {
+        "windows": 201500,
+        "accuracy": 0.9559,
+        "recall": 0.7119,
+        "precision": 0.7528,
+        "false_positive_rate": 0.0216,
+        "tp": 12121,
+        "fp": 3981,
+        "tn": 180492,
+        "fn": 4906
+      },
+      "fridge": {
+        "windows": 201500,
+        "accuracy": 0.9586,
+        "recall": 0.5977,
+        "precision": 0.7961,
+        "false_positive_rate": 0.0123,
+        "tp": 8986,
+        "fp": 2302,
+        "tn": 184164,
+        "fn": 6048
+      },
+      "freezer": {
+        "windows": 201500,
+        "accuracy": 0.9325,
+        "recall": 0.6986,
+        "precision": 0.5405,
+        "false_positive_rate": 0.0484,
+        "tp": 10607,
+        "fp": 9017,
+        "tn": 177300,
+        "fn": 4576
+      },
+      "sauna": {
+        "windows": 201500,
+        "accuracy": 0.9663,
+        "recall": 0.8588,
+        "precision": 0.7241,
+        "false_positive_rate": 0.0254,
+        "tp": 12460,
+        "fp": 4747,
+        "tn": 182245,
+        "fn": 2048
+      }
+    },
+    "accuracy_per_day": {
+      "day1": 0.9275,
+      "day2": 0.9245,
+      "day3": 0.9524,
+      "day4": 0.9631,
+      "day5": 0.9688,
+      "day6": 0.975,
+      "day7": 0.9722
+    },
+    "recall_per_type": {
+      "door_open": 0.7852,
+      "control_fail": 0.6585,
+      "control_stuck": 0.653,
+      "heat_event": 0.7704,
+      "setpoint_fault": 0.6248,
+      "spike": 1.0,
+      "stuck": 0.9972,
+      "noise": 1.0,
+      "offset": 0.6979
+    },
+    "events": 1447,
+    "events_detected": 1290,
+    "false_alarm_runs_per_day": 2.11
+  },
+  "test_normal_only_threshold": {
+    "threshold": [
+      30.17154312133789,
+      23.11251449584961
+    ],
+    "windows": 1007500,
+    "accuracy": 0.9495,
+    "recall": 0.4787,
+    "precision": 0.7787,
+    "false_positive_rate": 0.0113,
+    "tp": 37064,
+    "fp": 10536,
+    "tn": 919539,
+    "fn": 40361,
+    "balanced_accuracy": 0.7337,
+    "f1": 0.5929,
+    "roc_auc": 0.9456,
+    "per_phase": {
+      "BASIC": {
+        "windows": 147335,
+        "accuracy": 0.9263,
+        "recall": 0.1117,
+        "precision": 0.8543,
+        "false_positive_rate": 0.0017,
+        "tp": 1337,
+        "fp": 228,
+        "tn": 135133,
+        "fn": 10637
+      },
+      "FULL": {
+        "windows": 860165,
+        "accuracy": 0.9535,
+        "recall": 0.5459,
+        "precision": 0.7761,
+        "false_positive_rate": 0.013,
+        "tp": 35727,
+        "fp": 10308,
+        "tn": 784406,
+        "fn": 29724
+      }
+    },
+    "per_space": {
+      "room": {
+        "windows": 201500,
+        "accuracy": 0.9543,
+        "recall": 0.4934,
+        "precision": 0.8599,
+        "false_positive_rate": 0.0068,
+        "tp": 7733,
+        "fp": 1260,
+        "tn": 184567,
+        "fn": 7940
+      },
+      "office": {
+        "windows": 201500,
+        "accuracy": 0.952,
+        "recall": 0.5009,
+        "precision": 0.8797,
+        "false_positive_rate": 0.0063,
+        "tp": 8529,
+        "fp": 1166,
+        "tn": 183307,
+        "fn": 8498
+      },
+      "fridge": {
+        "windows": 201500,
+        "accuracy": 0.9428,
+        "recall": 0.2954,
+        "precision": 0.8278,
+        "false_positive_rate": 0.005,
+        "tp": 4441,
+        "fp": 924,
+        "tn": 185542,
+        "fn": 10593
+      },
+      "freezer": {
+        "windows": 201500,
+        "accuracy": 0.9423,
+        "recall": 0.4172,
+        "precision": 0.6957,
+        "false_positive_rate": 0.0149,
+        "tp": 6335,
+        "fp": 2771,
+        "tn": 183546,
+        "fn": 8848
+      },
+      "sauna": {
+        "windows": 201500,
+        "accuracy": 0.9558,
+        "recall": 0.6911,
+        "precision": 0.6943,
+        "false_positive_rate": 0.0236,
+        "tp": 10026,
+        "fp": 4415,
+        "tn": 182577,
+        "fn": 4482
+      }
+    },
+    "accuracy_per_day": {
+      "day1": 0.9259,
+      "day2": 0.9342,
+      "day3": 0.9432,
+      "day4": 0.9537,
+      "day5": 0.9595,
+      "day6": 0.9673,
+      "day7": 0.9625
+    },
+    "recall_per_type": {
+      "door_open": 0.5353,
+      "control_fail": 0.4244,
+      "control_stuck": 0.4265,
+      "heat_event": 0.5089,
+      "setpoint_fault": 0.3419,
+      "spike": 1.0,
+      "stuck": 0.973,
+      "noise": 1.0,
+      "offset": 0.337
+    },
+    "events": 1447,
+    "events_detected": 1111,
+    "false_alarm_runs_per_day": 0.97
+  },
+  "test_without_daily_profile": {
+    "windows": 1007500,
+    "accuracy": 0.8842,
+    "recall": 0.4565,
+    "precision": 0.3215,
+    "false_positive_rate": 0.0802,
+    "tp": 35341,
+    "fp": 74582,
+    "tn": 855493,
+    "fn": 42084,
+    "balanced_accuracy": 0.6882,
+    "f1": 0.3773,
+    "roc_auc": 0.8407,
+    "per_phase": {
+      "BASIC": {
+        "windows": 1007500,
+        "accuracy": 0.8842,
+        "recall": 0.4565,
+        "precision": 0.3215,
+        "false_positive_rate": 0.0802,
+        "tp": 35341,
+        "fp": 74582,
+        "tn": 855493,
+        "fn": 42084
+      },
+      "FULL": {
+        "windows": 0,
+        "accuracy": 0.0,
+        "recall": 0.0,
+        "precision": 0.0,
+        "false_positive_rate": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "per_space": {
+      "room": {
+        "windows": 201500,
+        "accuracy": 0.9261,
+        "recall": 0.3752,
+        "precision": 0.5361,
+        "false_positive_rate": 0.0274,
+        "tp": 5880,
+        "fp": 5089,
+        "tn": 180738,
+        "fn": 9793
+      },
+      "office": {
+        "windows": 201500,
+        "accuracy": 0.7902,
+        "recall": 0.4101,
+        "precision": 0.178,
+        "false_positive_rate": 0.1748,
+        "tp": 6983,
+        "fp": 32240,
+        "tn": 152233,
+        "fn": 10044
+      },
+      "fridge": {
+        "windows": 201500,
+        "accuracy": 0.9525,
+        "recall": 0.3821,
+        "precision": 0.9521,
+        "false_positive_rate": 0.0015,
+        "tp": 5745,
+        "fp": 289,
+        "tn": 186177,
+        "fn": 9289
+      },
+      "freezer": {
+        "windows": 201500,
+        "accuracy": 0.8471,
+        "recall": 0.4647,
+        "precision": 0.2373,
+        "false_positive_rate": 0.1217,
+        "tp": 7056,
+        "fp": 22675,
+        "tn": 163642,
+        "fn": 8127
+      },
+      "sauna": {
+        "windows": 201500,
+        "accuracy": 0.9051,
+        "recall": 0.667,
+        "precision": 0.4038,
+        "false_positive_rate": 0.0764,
+        "tp": 9677,
+        "fp": 14289,
+        "tn": 172703,
+        "fn": 4831
+      }
+    },
+    "accuracy_per_day": {
+      "day1": 0.9276,
+      "day2": 0.8717,
+      "day3": 0.8689,
+      "day4": 0.8763,
+      "day5": 0.8801,
+      "day6": 0.8837,
+      "day7": 0.8812
+    },
+    "recall_per_type": {
+      "door_open": 0.6981,
+      "control_fail": 0.3555,
+      "control_stuck": 0.3836,
+      "heat_event": 0.6447,
+      "setpoint_fault": 0.2486,
+      "spike": 1.0,
+      "stuck": 0.9993,
+      "noise": 1.0,
+      "offset": 0.2674
+    },
+    "events": 1447,
+    "events_detected": 1125,
+    "false_alarm_runs_per_day": 7.76
+  },
+  "test_without_alarm_gating": {
+    "windows": 1007500,
+    "accuracy": 0.9481,
+    "recall": 0.7125,
+    "precision": 0.6475,
+    "false_positive_rate": 0.0323,
+    "tp": 55167,
+    "fp": 30038,
+    "tn": 900037,
+    "fn": 22258,
+    "balanced_accuracy": 0.8401,
+    "f1": 0.6784,
+    "roc_auc": 0.9453,
+    "per_phase": {
+      "BASIC": {
+        "windows": 143436,
+        "accuracy": 0.9275,
+        "recall": 0.2896,
+        "precision": 0.6273,
+        "false_positive_rate": 0.0154,
+        "tp": 3412,
+        "fp": 2027,
+        "tn": 129627,
+        "fn": 8370
+      },
+      "FULL": {
+        "windows": 864064,
+        "accuracy": 0.9515,
+        "recall": 0.7884,
+        "precision": 0.6488,
+        "false_positive_rate": 0.0351,
+        "tp": 51755,
+        "fp": 28011,
+        "tn": 770410,
+        "fn": 13888
+      }
+    },
+    "per_space": {
+      "room": {
+        "windows": 201500,
+        "accuracy": 0.9566,
+        "recall": 0.7152,
+        "precision": 0.7239,
+        "false_positive_rate": 0.023,
+        "tp": 11210,
+        "fp": 4275,
+        "tn": 181552,
+        "fn": 4463
+      },
+      "office": {
+        "windows": 201500,
+        "accuracy": 0.9564,
+        "recall": 0.7156,
+        "precision": 0.7559,
+        "false_positive_rate": 0.0213,
+        "tp": 12184,
+        "fp": 3934,
+        "tn": 180539,
+        "fn": 4843
+      },
+      "fridge": {
+        "windows": 201500,
+        "accuracy": 0.9523,
+        "recall": 0.5945,
+        "precision": 0.7175,
+        "false_positive_rate": 0.0189,
+        "tp": 8938,
+        "fp": 3520,
+        "tn": 182946,
+        "fn": 6096
+      },
+      "freezer": {
+        "windows": 201500,
+        "accuracy": 0.9305,
+        "recall": 0.6889,
+        "precision": 0.5297,
+        "false_positive_rate": 0.0498,
+        "tp": 10460,
+        "fp": 9286,
+        "tn": 177031,
+        "fn": 4723
+      },
+      "sauna": {
+        "windows": 201500,
+        "accuracy": 0.9446,
+        "recall": 0.853,
+        "precision": 0.5783,
+        "false_positive_rate": 0.0483,
+        "tp": 12375,
+        "fp": 9023,
+        "tn": 177969,
+        "fn": 2133
+      }
+    },
+    "accuracy_per_day": {
+      "day1": 0.9275,
+      "day2": 0.9306,
+      "day3": 0.939,
+      "day4": 0.9499,
+      "day5": 0.9585,
+      "day6": 0.9661,
+      "day7": 0.965
+    },
+    "recall_per_type": {
+      "door_open": 0.7875,
+      "control_fail": 0.6589,
+      "control_stuck": 0.6542,
+      "heat_event": 0.7586,
+      "setpoint_fault": 0.6136,
+      "spike": 1.0,
+      "stuck": 0.9972,
+      "noise": 1.0,
+      "offset": 0.6929
+    },
+    "events": 1447,
+    "events_detected": 1292,
+    "false_alarm_runs_per_day": 2.41
+  },
+  "showcase": {
+    "room_20C": {
+      "tp": 204,
+      "fp": 217,
+      "tn": 3694,
+      "fn": 200,
+      "accuracy": 0.9034,
+      "score_hash": "0xE2561DD2"
+    },
+    "sauna_50C": {
+      "tp": 272,
+      "fp": 13,
+      "tn": 3979,
+      "fn": 51,
+      "accuracy": 0.9852,
+      "score_hash": "0xF1379825"
+    },
+    "freezer_-18C": {
+      "tp": 171,
+      "fp": 324,
+      "tn": 3701,
+      "fn": 119,
+      "accuracy": 0.8973,
+      "score_hash": "0x3E16AEDF"
+    }
+  }
+}

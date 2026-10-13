@@ -1,0 +1,58 @@
+{
+  "parity": {
+    "windows": 12960,
+    "state_bytes": 944,
+    "bit_exact_scores": 12960,
+    "phase_matches": 12960,
+    "alarm_matches": 12960
+  },
+  "gcc": {
+    "compiler": "arm-zephyr-eabi-gcc.exe",
+    "sections": {
+      "text": 1726,
+      "rodata": 1064,
+      "data": 0,
+      "bss": 0
+    },
+    "stack": {
+      "frames": {
+        "ad_log2": 8,
+        "ad_exp2": 0,
+        "ad_init": 8,
+        "ad_feed": 0,
+        "ad_run_inference": 160
+      },
+      "peak": 168
+    },
+    "undefined_symbols": [
+      "memset"
+    ],
+    "nvm_bytes": 2790,
+    "ram_bytes": 1112,
+    "state_bytes": 944
+  },
+  "clang": {
+    "compiler": "clang",
+    "sections": {
+      "text": 2200,
+      "rodata": 1100,
+      "data": 0,
+      "bss": 0
+    },
+    "stack": {
+      "frames": {
+        "ad_init": 8,
+        "ad_feed": 0,
+        "ad_run_inference": 176,
+        "ad_exp2": 0
+      },
+      "peak": 176
+    },
+    "undefined_symbols": [
+      "__aeabi_memclr4"
+    ],
+    "nvm_bytes": 3300,
+    "ram_bytes": 1120,
+    "state_bytes": 944
+  }
+}

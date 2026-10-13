@@ -1,0 +1,30 @@
+# nRF54LM20 DK (PCA10184), build nrf54lm20dk/nrf54lm20b/cpuapp, Zephyr 4.4.2
+# model: H=24 (322 params), trained on 120 synthetic normal days (ml/data.py, seed 2027)
+# console: VCOM1 115200 8N1, captured after reset
+*** Booting Zephyr OS build v4.4.2 ***
+
+*** Temperature anomaly detection - nRF54LM20 ***
+embedded holdout day: 86400 samples @ 1 Hz, threshold 10.194
+02:55:59  ANOMALY  score=10.5  temp=19.86 C
+05:12:59  normal   (peak score 95.5)
+07:12:59  ANOMALY  score=11.8  temp=16.79 C
+07:13:59  normal   (peak score 11.8)
+08:27:59  ANOMALY  score=236.6  temp=21.10 C
+08:51:59  normal   (peak score 303.0)
+14:20:59  ANOMALY  score=11.5  temp=18.76 C
+15:34:59  normal   (peak score 127.3)
+20:51:59  ANOMALY  score=11.2  temp=20.87 C
+20:55:59  normal   (peak score 15.0)
+21:25:59  ANOMALY  score=11.2  temp=23.53 C
+21:55:59  normal   (peak score 19.5)
+22:01:59  ANOMALY  score=10.4  temp=21.87 C
+22:02:59  normal   (peak score 10.4)
+
+--- holdout result (1440 windows of 60 s) ---
+TP=246 FP=25 TN=1153 FN=16  accuracy=0.9715  precision=0.9077  recall=0.9389
+matches Python reference (TP/FP/TN/FN): YES
+
+--- timing (GRTC, batch average) ---
+inference: 21.43 us per call (10000 calls)
+full window (60 x feed + inference, whole day): 59.88 us -> feed 0.641 us/sample
+CPU load at 1 Hz: 0.00010 % | detector state: 36 B
