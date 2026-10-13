@@ -10,6 +10,7 @@ tokio = { version = "1.53", features = ["full"] }
 tower-http = { version = "0.7", features = ["cors"] }
 sea-orm = { version = "2.0.2", features = ["runtime-tokio-rustls", "sqlx-postgres", "sqlx-sqlite", "macros", "chrono", "uuid"] }
 vespertide = "0.3.0"
+serde = { version = "1", features = ["derive"] }
 
 [build-dependencies]
 vespera = "0.4.0"

@@ -68,6 +68,7 @@ name = "api"
 version = "0.1.0"
 dependencies = [
  "sea-orm",
+ "serde",
  "tokio",
  "tower-http",
  "vespera",
