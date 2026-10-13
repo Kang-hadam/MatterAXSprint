@@ -1,3 +1,5 @@
+pub mod danger;
+
 use std::collections::HashMap;
 
 use vespera::axum::Json;

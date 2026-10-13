@@ -15,7 +15,11 @@ async fn main() {
     let config = Config::from_env();
 
     let db = create_db_connection(&config.database_url).await;
-    let state = AppState { db, config };
+    let state = AppState {
+        db,
+        config,
+        danger: Default::default(),
+    };
     let port = state.config.port;
     vespertide::vespertide_migration!(&state.db).await.unwrap();
 
