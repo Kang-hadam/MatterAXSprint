@@ -10,6 +10,48 @@
     }
   ],
   "paths": {
+    "/danger": {
+      "get": {
+        "operationId": "get_danger",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DangerStatus"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "set_danger",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangerStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DangerStatus"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/health": {
       "get": {
         "operationId": "health",
@@ -28,6 +70,21 @@
             }
           }
         }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DangerStatus": {
+        "type": "object",
+        "properties": {
+          "danger": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "danger"
+        ]
       }
     }
   }
