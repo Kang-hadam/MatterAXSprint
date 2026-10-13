@@ -2,6 +2,9 @@ import { Box, globalCss } from '@devup-ui/react'
 import { resetCss } from '@devup-ui/reset-css'
 import type { Metadata } from 'next'
 
+import { DangerAlert } from '@/components/common/DangerAlert'
+import { Provider } from '@/components/Provider'
+
 resetCss()
 
 globalCss({
@@ -28,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body>
-        <Box bg="$bg" maxW="480px" minH="100dvh" mx="auto" pos="relative">
-          {children}
-        </Box>
+        <Provider>
+          <Box bg="$bg" maxW="480px" minH="100dvh" mx="auto" pos="relative">
+            {children}
+          </Box>
+          <DangerAlert />
+        </Provider>
       </body>
     </html>
   )
