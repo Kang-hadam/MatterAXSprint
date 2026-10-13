@@ -1,0 +1,37 @@
+#
+# Sysbuild configuration for the nRF54LM20-DK: MCUboot + generated factory
+# data, as in nrf/samples/matter/light_switch.
+#
+
+#### Bootloader
+choice BOOTLOADER
+	default BOOTLOADER_MCUBOOT
+endchoice
+
+if BOOTLOADER_MCUBOOT
+
+#### DFU multi-image support
+config DFU_MULTI_IMAGE_PACKAGE_BUILD
+	default y
+
+config DFU_MULTI_IMAGE_PACKAGE_APP
+	default y
+
+config PM_EXTERNAL_FLASH_MCUBOOT_SECONDARY
+	default y
+
+if BOARD_NRF54LM20DK
+
+# Disable checking the external drivers for the nRF54LM20 DK.
+config PM_OVERRIDE_EXTERNAL_DRIVER_CHECK
+	default y
+
+endif # BOARD_NRF54LM20DK
+
+endif # BOOTLOADER_MCUBOOT
+
+#### Enable generating factory data
+config MATTER_FACTORY_DATA_GENERATE
+	default y
+
+source "share/sysbuild/Kconfig"
