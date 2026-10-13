@@ -1,0 +1,38 @@
+#
+# Matter judge node on the nRF54LM20-DK.
+#
+# Based on nrf/samples/matter/light_switch (Nordic-5-Clause).
+#
+mainmenu "Ansim Matter Judge"
+
+config STATE_LEDS
+	bool "Use LEDs to indicate the device state"
+	default y
+	help
+	  Use LEDs to render the current state of the device such as the progress of commissioning of
+	  the device into a network or the factory reset initiation.
+
+# Same Thread/ICD setup as the light_switch sample: the data model keeps the
+# ICD Management cluster, so ICD support stays on, in SIT mode with a 1 s poll.
+choice OPENTHREAD_NORDIC_LIBRARY_CONFIGURATION
+	default OPENTHREAD_NORDIC_LIBRARY_MTD
+endchoice
+
+choice OPENTHREAD_DEVICE_TYPE
+	default OPENTHREAD_MTD
+endchoice
+
+config CHIP_ENABLE_ICD_SUPPORT
+	default y
+
+config CHIP_ICD_SLOW_POLL_INTERVAL
+	default 1000
+
+# Needed for chip::Controller::ReadAttribute on the bound sensor.
+config CHIP_ENABLE_READ_CLIENT
+	default y
+
+source "$(ZEPHYR_CONNECTEDHOMEIP_MODULE_DIR)/config/nrfconnect/chip-module/Kconfig.features"
+source "$(ZEPHYR_CONNECTEDHOMEIP_MODULE_DIR)/config/nrfconnect/chip-module/Kconfig.defaults"
+source "$(ZEPHYR_NRF_MODULE_DIR)/samples/matter/common/src/Kconfig"
+source "Kconfig.zephyr"
