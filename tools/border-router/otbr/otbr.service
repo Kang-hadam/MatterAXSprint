@@ -1,0 +1,15 @@
+[Unit]
+Description=OpenThread Border Router (docker)
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/devfive/otbr/start.sh
+ExecStop=/usr/bin/docker stop otbr
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
