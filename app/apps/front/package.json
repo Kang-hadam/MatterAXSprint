@@ -14,6 +14,7 @@
     "@devup-api/react-query": "^0.1",
     "@devup-ui/react": "^1",
     "@devup-ui/reset-css": "^1",
+    "@tanstack/react-query": "^5.102",
     "react": "^19",
     "react-server-dom-webpack": "19.2.8",
     "vinext": "1.0.0-beta.8"
