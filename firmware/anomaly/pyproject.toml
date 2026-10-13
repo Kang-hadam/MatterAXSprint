@@ -1,0 +1,22 @@
+[project]
+name = "temp-anomaly-nrf54"
+version = "0.1.0"
+description = "1 Hz temperature anomaly detection (PyTorch) for nRF54LM20-DK"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy>=2.0", "torch>=2.7", "matplotlib>=3.9"]
+
+[tool.uv]
+package = false
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+extraPaths = ["ml"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

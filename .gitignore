@@ -14,3 +14,8 @@ firmware/**/build/
 firmware/**/build_*/
 firmware/thread_cli/dk/
 firmware/thread_cli/dongle/
+
+# Anomaly model: simulated data (regenerate with ml/train.py, ml/data.py) and Python env
+firmware/anomaly/data/
+firmware/anomaly/.venv/
+firmware/anomaly/**/__pycache__/
