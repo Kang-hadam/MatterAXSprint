@@ -1,0 +1,16 @@
+#
+# The dongle boots through the factory Nordic USB bootloader: no MCUboot,
+# no partition manager, no generated factory data partition.
+#
+
+choice BOOTLOADER
+	default BOOTLOADER_NONE
+endchoice
+
+config PARTITION_MANAGER
+	default n
+
+config MATTER_FACTORY_DATA_GENERATE
+	default n
+
+source "share/sysbuild/Kconfig"

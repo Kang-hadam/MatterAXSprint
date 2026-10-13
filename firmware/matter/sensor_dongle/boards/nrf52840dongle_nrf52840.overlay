@@ -1,0 +1,49 @@
+/*
+ * nRF52840 Dongle flash layout for a Matter application that runs directly
+ * under the Nordic USB bootloader (no MCUboot).
+ *
+ *   0x00000 - 0x01000  MBR (factory programmed)
+ *   0x01000 - 0xD8000  application            (slot0_partition, 860 KB)
+ *   0xD8000 - 0xE0000  settings / NVS         (storage_partition, 32 KB)
+ *   0xE0000 - 0xFE000  Nordic USB bootloader
+ *   0xFE000 - 0x100000 MBR params + bootloader settings
+ */
+
+/delete-node/ &boot_partition;
+/delete-node/ &slot0_partition;
+/delete-node/ &slot1_partition;
+/delete-node/ &storage_partition;
+
+&flash0 {
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		slot0_partition: partition@1000 {
+			label = "image-0";
+			reg = <0x00001000 0x000d7000>;
+		};
+
+		storage_partition: partition@d8000 {
+			label = "storage";
+			reg = <0x000d8000 0x00008000>;
+		};
+	};
+};
+
+/ {
+	chosen {
+		zephyr,code-partition = &slot0_partition;
+	};
+
+	/*
+	 * P0.19 is wired to the reset line. Driving it low reboots the dongle
+	 * into the USB bootloader. The OpenThread platform exposes this through
+	 * CONFIG_OPENTHREAD_PLATFORM_BOOTLOADER_MODE_GPIO.
+	 */
+	openthread_config: openthread {
+		compatible = "openthread,config";
+		bootloader-gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
+	};
+};

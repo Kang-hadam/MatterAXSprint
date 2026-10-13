@@ -1,0 +1,44 @@
+#
+# Matter temperature sensor on the nRF52840 Dongle.
+#
+# Based on nrf/samples/matter/temperature_sensor (Nordic-5-Clause).
+#
+mainmenu "Ansim Matter Temperature Sensor"
+
+choice OPENTHREAD_NORDIC_LIBRARY_CONFIGURATION
+	default OPENTHREAD_NORDIC_LIBRARY_MTD
+endchoice
+
+choice OPENTHREAD_DEVICE_TYPE
+	default OPENTHREAD_MTD
+endchoice
+
+# The sample's data model (ZAP) declares the ICD Management cluster with the
+# check-in commands, so ICD support must stay on. The dongle is USB powered,
+# so it runs as a short-idle-time device (no LIT) that polls its parent every
+# second: the judge board's reads are answered within one poll period.
+config CHIP_ENABLE_ICD_SUPPORT
+	default y
+
+config CHIP_ICD_LIT_SUPPORT
+	default n
+
+config CHIP_ICD_CHECK_IN_SUPPORT
+	default y
+
+config CHIP_ICD_UAT_SUPPORT
+	default y
+
+config CHIP_ICD_SLOW_POLL_INTERVAL
+	default 1000
+
+config CHIP_ICD_FAST_POLLING_INTERVAL
+	default 200
+
+config CHIP_ICD_REPORT_ON_ACTIVE_MODE
+	default y
+
+source "$(ZEPHYR_CONNECTEDHOMEIP_MODULE_DIR)/config/nrfconnect/chip-module/Kconfig.features"
+source "$(ZEPHYR_CONNECTEDHOMEIP_MODULE_DIR)/config/nrfconnect/chip-module/Kconfig.defaults"
+source "$(ZEPHYR_NRF_MODULE_DIR)/samples/matter/common/src/Kconfig"
+source "Kconfig.zephyr"
